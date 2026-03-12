@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aye - Do Orum ao Aye | Links</title>
-  <meta name="description" content="Aye - Tradicao ancestral encontra tecnologia moderna. Materializamos o sagrado com impressao 3D e acabamento artesanal.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Ayê - Do Orum ao Ayê | Links</title>
+  <meta name="description" content="Ayê - Tradição ancestral encontra tecnologia moderna. Materializamos o sagrado com impressão 3D e acabamento artesanal.">
+  <link rel="icon" type="image/png" href="img.png">
+  <link rel="apple-touch-icon" href="img.png">
+  <!-- Using system fonts Georgia / Times New Roman -->
   <style>
     *, *::before, *::after {
       margin: 0;
@@ -18,15 +18,17 @@
     :root {
       --terracota: #A65B42;
       --terracota-light: #c4795e;
-      --terracota-glow: rgba(166, 91, 66, 0.4);
+      --terracota-glow: rgba(166, 91, 66, 0.35);
       --marrom: #41322A;
       --marrom-deep: #2e231d;
+      --marrom-soft: rgba(65, 50, 42, 0.6);
       --verde: #4b6043;
       --verde-light: #627a58;
       --creme: #F2E7DA;
       --creme-soft: #faf4ed;
-      --creme-transparent: rgba(242, 231, 218, 0.08);
-      --gold-accent: #d4a574;
+      --creme-warm: #ebe0d2;
+      --creme-deep: #e3d5c5;
+      --gold-accent: #b8865a;
     }
 
     html {
@@ -34,9 +36,9 @@
     }
 
     body {
-      font-family: 'Outfit', sans-serif;
-      background-color: var(--marrom-deep);
-      color: var(--creme);
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background-color: var(--creme);
+      color: var(--marrom);
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -55,22 +57,22 @@
 
     .bg-gradient {
       background:
-        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(166, 91, 66, 0.15) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 50% at 20% 80%, rgba(75, 96, 67, 0.12) 0%, transparent 50%),
-        radial-gradient(ellipse 50% 40% at 80% 70%, rgba(166, 91, 66, 0.08) 0%, transparent 50%),
-        linear-gradient(180deg, var(--marrom-deep) 0%, #352920 40%, var(--marrom) 100%);
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(166, 91, 66, 0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 20% 90%, rgba(75, 96, 67, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse 50% 40% at 85% 60%, rgba(166, 91, 66, 0.04) 0%, transparent 50%),
+        linear-gradient(180deg, var(--creme-soft) 0%, var(--creme) 40%, var(--creme-warm) 100%);
     }
 
     .bg-noise {
-      opacity: 0.03;
+      opacity: 0.035;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
       background-size: 200px 200px;
     }
 
     /* Sacred geometry background pattern */
     .bg-sacred {
-      opacity: 0.025;
-      background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='60' cy='60' r='40' fill='none' stroke='%23F2E7DA' stroke-width='0.5'/%3E%3Ccircle cx='60' cy='60' r='28' fill='none' stroke='%23F2E7DA' stroke-width='0.3'/%3E%3Ccircle cx='60' cy='60' r='16' fill='none' stroke='%23F2E7DA' stroke-width='0.3'/%3E%3Cline x1='60' y1='20' x2='60' y2='100' stroke='%23F2E7DA' stroke-width='0.2'/%3E%3Cline x1='20' y1='60' x2='100' y2='60' stroke='%23F2E7DA' stroke-width='0.2'/%3E%3Cline x1='31.7' y1='31.7' x2='88.3' y2='88.3' stroke='%23F2E7DA' stroke-width='0.2'/%3E%3Cline x1='88.3' y1='31.7' x2='31.7' y2='88.3' stroke='%23F2E7DA' stroke-width='0.2'/%3E%3C/svg%3E");
+      opacity: 0.035;
+      background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='60' cy='60' r='40' fill='none' stroke='%23A65B42' stroke-width='0.5'/%3E%3Ccircle cx='60' cy='60' r='28' fill='none' stroke='%23A65B42' stroke-width='0.3'/%3E%3Ccircle cx='60' cy='60' r='16' fill='none' stroke='%23A65B42' stroke-width='0.3'/%3E%3Cline x1='60' y1='20' x2='60' y2='100' stroke='%23A65B42' stroke-width='0.2'/%3E%3Cline x1='20' y1='60' x2='100' y2='60' stroke='%23A65B42' stroke-width='0.2'/%3E%3Cline x1='31.7' y1='31.7' x2='88.3' y2='88.3' stroke='%23A65B42' stroke-width='0.2'/%3E%3Cline x1='88.3' y1='31.7' x2='31.7' y2='88.3' stroke='%23A65B42' stroke-width='0.2'/%3E%3C/svg%3E");
       background-size: 120px 120px;
       animation: sacredDrift 60s linear infinite;
     }
@@ -84,25 +86,25 @@
     .orb {
       position: fixed;
       border-radius: 50%;
-      filter: blur(60px);
+      filter: blur(70px);
       animation: orbFloat 12s ease-in-out infinite;
       z-index: 0;
       pointer-events: none;
     }
 
     .orb-1 {
-      width: 300px;
-      height: 300px;
-      background: radial-gradient(circle, rgba(166, 91, 66, 0.12), transparent 70%);
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(166, 91, 66, 0.08), transparent 70%);
       top: -100px;
       right: -80px;
       animation-duration: 14s;
     }
 
     .orb-2 {
-      width: 250px;
-      height: 250px;
-      background: radial-gradient(circle, rgba(75, 96, 67, 0.1), transparent 70%);
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle, rgba(75, 96, 67, 0.06), transparent 70%);
       bottom: -60px;
       left: -60px;
       animation-duration: 18s;
@@ -110,9 +112,9 @@
     }
 
     .orb-3 {
-      width: 180px;
-      height: 180px;
-      background: radial-gradient(circle, rgba(212, 165, 116, 0.08), transparent 70%);
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(184, 134, 90, 0.07), transparent 70%);
       top: 40%;
       left: 60%;
       animation-duration: 16s;
@@ -152,45 +154,37 @@
       height: 120px;
       border-radius: 50%;
       padding: 3px;
-      background: conic-gradient(
-        from 0deg,
-        var(--terracota),
-        var(--gold-accent),
-        var(--verde),
-        var(--terracota-light),
-        var(--terracota)
-      );
-      animation: ringRotate 8s linear infinite;
+      background: linear-gradient(135deg, var(--terracota), var(--gold-accent), var(--verde));
       position: relative;
+      animation: avatarPulse 4s ease-in-out infinite;
     }
 
     .avatar-ring::before {
       content: '';
       position: absolute;
-      inset: -6px;
+      inset: -8px;
       border-radius: 50%;
-      background: conic-gradient(
-        from 180deg,
-        transparent,
-        rgba(166, 91, 66, 0.3),
-        transparent,
-        rgba(75, 96, 67, 0.2),
-        transparent
-      );
-      animation: ringRotate 12s linear infinite reverse;
-      filter: blur(8px);
+      background: linear-gradient(135deg, rgba(166, 91, 66, 0.25), rgba(75, 96, 67, 0.15));
+      filter: blur(12px);
+      animation: glowBreath 4s ease-in-out infinite;
+      z-index: -1;
     }
 
-    @keyframes ringRotate {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
+    @keyframes avatarPulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(166, 91, 66, 0.15); }
+      50% { transform: scale(1.03); box-shadow: 0 0 20px 4px rgba(166, 91, 66, 0.1); }
+    }
+
+    @keyframes glowBreath {
+      0%, 100% { opacity: 0.5; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.08); }
     }
 
     .avatar-inner {
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      background: var(--marrom);
+      background: var(--creme-soft);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -198,9 +192,10 @@
       position: relative;
     }
 
-    .avatar-inner svg {
-      width: 60px;
-      height: 60px;
+    .avatar-inner img {
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
     }
 
     /* ========== BRAND TEXT ========== */
@@ -212,11 +207,11 @@
     }
 
     .brand-name {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Georgia', 'Times New Roman', serif;
       font-size: 2.6rem;
       font-weight: 700;
       letter-spacing: 0.08em;
-      color: var(--creme);
+      color: var(--marrom);
       line-height: 1.1;
       position: relative;
       display: inline-block;
@@ -239,11 +234,11 @@
     }
 
     .brand-sub {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Georgia', 'Times New Roman', serif;
       font-size: 0.95rem;
       font-weight: 400;
       font-style: italic;
-      color: var(--gold-accent);
+      color: var(--terracota);
       letter-spacing: 0.15em;
       margin-top: 4px;
     }
@@ -259,7 +254,7 @@
     .tagline p {
       font-size: 0.82rem;
       font-weight: 300;
-      color: rgba(242, 231, 218, 0.55);
+      color: var(--marrom-soft);
       letter-spacing: 0.04em;
       line-height: 1.6;
       max-width: 300px;
@@ -270,7 +265,7 @@
       width: 100%;
       max-width: 280px;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(166, 91, 66, 0.3), rgba(212, 165, 116, 0.2), rgba(75, 96, 67, 0.3), transparent);
+      background: linear-gradient(90deg, transparent, rgba(166, 91, 66, 0.25), rgba(184, 134, 90, 0.2), rgba(75, 96, 67, 0.2), transparent);
       margin-bottom: 32px;
       opacity: 0;
       animation: revealFade 1s ease 0.6s forwards;
@@ -302,11 +297,12 @@
       padding: 16px 20px;
       border-radius: 16px;
       text-decoration: none;
-      color: var(--creme);
-      background: linear-gradient(135deg, rgba(242, 231, 218, 0.06) 0%, rgba(242, 231, 218, 0.02) 100%);
-      border: 1px solid rgba(242, 231, 218, 0.08);
+      color: var(--marrom);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 100%);
+      border: 1px solid rgba(166, 91, 66, 0.1);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 2px 8px rgba(65, 50, 42, 0.04), 0 1px 2px rgba(65, 50, 42, 0.03);
       transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
       position: relative;
       overflow: hidden;
@@ -330,7 +326,7 @@
       left: 50%;
       width: 0;
       height: 0;
-      background: radial-gradient(circle, rgba(242, 231, 218, 0.1), transparent 70%);
+      background: radial-gradient(circle, rgba(166, 91, 66, 0.06), transparent 70%);
       border-radius: 50%;
       transform: translate(-50%, -50%);
       transition: width 0.6s ease, height 0.6s ease;
@@ -339,15 +335,16 @@
 
     .link-btn:hover {
       transform: translateY(-3px) scale(1.02);
-      border-color: rgba(166, 91, 66, 0.4);
+      border-color: rgba(166, 91, 66, 0.25);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%);
       box-shadow:
-        0 8px 32px rgba(166, 91, 66, 0.2),
-        0 2px 8px rgba(0, 0, 0, 0.3),
-        inset 0 1px 0 rgba(242, 231, 218, 0.08);
+        0 12px 36px rgba(166, 91, 66, 0.12),
+        0 4px 12px rgba(65, 50, 42, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
     }
 
     .link-btn:hover::before {
-      opacity: 0.12;
+      opacity: 0.05;
     }
 
     .link-btn:hover::after {
@@ -370,6 +367,7 @@
       flex-shrink: 0;
       position: relative;
       z-index: 1;
+      color: var(--creme-soft);
       transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
@@ -385,17 +383,17 @@
 
     .link-icon--site {
       background: linear-gradient(135deg, var(--terracota), var(--terracota-light));
-      box-shadow: 0 4px 12px rgba(166, 91, 66, 0.3);
+      box-shadow: 0 4px 12px rgba(166, 91, 66, 0.25);
     }
 
     .link-icon--whatsapp {
       background: linear-gradient(135deg, var(--verde), var(--verde-light));
-      box-shadow: 0 4px 12px rgba(75, 96, 67, 0.3);
+      box-shadow: 0 4px 12px rgba(75, 96, 67, 0.25);
     }
 
     .link-icon--instagram {
       background: linear-gradient(135deg, var(--terracota), #c2724f);
-      box-shadow: 0 4px 12px rgba(166, 91, 66, 0.3);
+      box-shadow: 0 4px 12px rgba(166, 91, 66, 0.25);
     }
 
     .link-text {
@@ -409,12 +407,13 @@
       font-weight: 500;
       font-size: 0.95rem;
       letter-spacing: 0.02em;
+      color: var(--marrom);
     }
 
     .link-desc {
       font-size: 0.75rem;
       font-weight: 300;
-      color: rgba(242, 231, 218, 0.45);
+      color: rgba(65, 50, 42, 0.5);
       margin-top: 2px;
       letter-spacing: 0.02em;
     }
@@ -423,7 +422,8 @@
       margin-left: auto;
       position: relative;
       z-index: 1;
-      opacity: 0.3;
+      opacity: 0.25;
+      color: var(--terracota);
       transition: all 0.4s ease;
     }
 
@@ -433,7 +433,7 @@
     }
 
     .link-btn:hover .link-arrow {
-      opacity: 0.8;
+      opacity: 0.7;
       transform: translateX(4px);
     }
 
@@ -448,15 +448,15 @@
     .footer-divider {
       width: 40px;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(212, 165, 116, 0.3), transparent);
+      background: linear-gradient(90deg, transparent, rgba(166, 91, 66, 0.25), transparent);
       margin: 0 auto 16px;
     }
 
     .footer-text {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Georgia', 'Times New Roman', serif;
       font-size: 0.75rem;
       font-style: italic;
-      color: rgba(242, 231, 218, 0.25);
+      color: rgba(65, 50, 42, 0.3);
       letter-spacing: 0.1em;
     }
 
@@ -472,7 +472,7 @@
       font-weight: 300;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: rgba(242, 231, 218, 0.2);
+      color: rgba(65, 50, 42, 0.25);
       position: relative;
     }
 
@@ -485,7 +485,7 @@
       width: 2px;
       height: 2px;
       border-radius: 50%;
-      background: rgba(212, 165, 116, 0.3);
+      background: rgba(166, 91, 66, 0.3);
     }
 
     /* ========== ANIMATIONS ========== */
@@ -518,7 +518,7 @@
       position: absolute;
       width: 2px;
       height: 2px;
-      background: var(--gold-accent);
+      background: var(--terracota);
       border-radius: 50%;
       opacity: 0;
       animation: particleRise linear infinite;
@@ -541,13 +541,13 @@
         opacity: 0;
       }
       10% {
-        opacity: 0.15;
+        opacity: 0.12;
       }
       50% {
-        opacity: 0.08;
+        opacity: 0.06;
       }
       90% {
-        opacity: 0.12;
+        opacity: 0.1;
       }
       100% {
         transform: translateY(-20vh) translateX(30px);
@@ -590,7 +590,7 @@
         transition-duration: 0.01ms !important;
       }
       .bg-sacred { animation: none; }
-      .avatar-ring { animation: none; }
+      .avatar-ring, .avatar-ring::before { animation: none; }
       .particle { animation: none; display: none; }
       .orb { animation: none; }
     }
@@ -629,31 +629,20 @@
     <div class="avatar-wrapper">
       <div class="avatar-ring">
         <div class="avatar-inner">
-          <!-- Aye stylized symbol -->
-          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M30 6C30 6 12 20 12 34c0 9.9 8.1 18 18 18s18-8.1 18-18C48 20 30 6 30 6z"
-                  stroke="#A65B42" stroke-width="1.5" fill="none" opacity="0.6"/>
-            <path d="M30 14c0 0-10 9-10 18c0 5.5 4.5 10 10 10s10-4.5 10-10C40 23 30 14 30 14z"
-                  stroke="#d4a574" stroke-width="1" fill="none" opacity="0.4"/>
-            <circle cx="30" cy="32" r="4" fill="#A65B42" opacity="0.7"/>
-            <line x1="30" y1="22" x2="30" y2="28" stroke="#d4a574" stroke-width="0.8" opacity="0.5"/>
-            <line x1="30" y1="36" x2="30" y2="44" stroke="#d4a574" stroke-width="0.8" opacity="0.5"/>
-            <line x1="22" y1="32" x2="28" y2="32" stroke="#d4a574" stroke-width="0.8" opacity="0.4"/>
-            <line x1="32" y1="32" x2="38" y2="32" stroke="#d4a574" stroke-width="0.8" opacity="0.4"/>
-          </svg>
+          <img src="img.png" alt="Ayê - Do Orum ao Ayê">
         </div>
       </div>
     </div>
 
     <!-- Brand -->
     <div class="brand">
-      <h1 class="brand-name">AYE</h1>
-      <p class="brand-sub">Do Orum ao Aye</p>
+      <h1 class="brand-name">AYÊ</h1>
+      <p class="brand-sub">Do Orum ao Ayê</p>
     </div>
 
     <!-- Tagline -->
     <div class="tagline">
-      <p>Tradicao ancestral encontra tecnologia moderna.<br>Materializamos o sagrado.</p>
+      <p>Tradição ancestral encontra tecnologia moderna.<br>Materializamos o sagrado.</p>
     </div>
 
     <!-- Divider -->
@@ -734,11 +723,11 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-divider"></div>
-      <p class="footer-text">Do Orum ao Aye, com respeito e devocao.</p>
+      <p class="footer-text">Do Orum ao Ayê, com respeito e devoção.</p>
       <div class="footer-values">
         <span class="footer-value">Respeito</span>
         <span class="footer-value">Qualidade</span>
-        <span class="footer-value">Inovacao</span>
+        <span class="footer-value">Inovação</span>
       </div>
     </footer>
 
